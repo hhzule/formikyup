@@ -1,0 +1,53 @@
+body{
+  margin:0;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+
+  align-items: center;
+}
+.App {
+  text-align: center;
+  color: wheat;
+  display: flex;
+  letter-spacing: 2px;
+ 
+
+}
+h1{
+  color: grey;
+  font-weight: bolder;
+}
+.App span{
+  position: relative;
+  top: 5px;
+  
+  font-size: 4rem;
+
+}
+.timer_text{
+  color: rgb(116, 116, 116);
+  font-size: 30px;
+  margin: 0;
+   font-size: 5rem;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

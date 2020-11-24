@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+}
+p {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.info {
+  margin: 0 8px;
+}

@@ -1,0 +1,16 @@
+body {
+  background-color: aquamarine !important;
+}
+.container {
+  margin: 0 20%;
+  /* background-image: url(); */
+}
+.form {
+  margin: 150px 200px;
+}
+.account {
+  margin: 30px !important;
+}
+.account * {
+  font-size: x-large !important;
+}
