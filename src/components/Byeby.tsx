@@ -1,11 +1,14 @@
 import React from "react";
 import "./Byebye.css";
-
+import DoneAllIcon from "@material-ui/icons/DoneAll";
 const Byeby = ({ data }: any) => {
   console.log(data, "data");
   return (
-    <div>
-      <h1>Great!! The account with the following info has been created</h1>
+    <div className="byebye">
+      <div className="donediv">
+        <DoneAllIcon />
+      </div>
+      <h2>Great!! The account with the following info has been created</h2>
       <p>
         <strong className="info">First Name:</strong> {data.firstName}
       </p>
@@ -18,7 +21,7 @@ const Byeby = ({ data }: any) => {
       <p>
         <strong className="info">Email:</strong> {data.email}
       </p>
-      <p>
+      <p className="flex">
         <strong className="info">Subject:</strong>{" "}
         {data.Subject?.map((arr: string, i: number) => {
           return <div key={i}>{arr}</div>;

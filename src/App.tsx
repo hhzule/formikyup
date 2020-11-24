@@ -1,11 +1,20 @@
 import React from "react";
-// import "./App.css";
+import "./App.css";
 import FormDisplay from "./components/FormDisplay";
+import mu from "./components/mat.png";
+import form from "./components/formik.png";
+import yup from "./components/yup.webp";
 
 function App() {
   return (
     <>
-      <h1>PROJECT 10</h1>
+      <div className="header">
+        <h1>PROJECT 10</h1>
+        <img className="img" src={mu} alt="" />
+        <img className="img" src={form} alt="" />
+        <img className="img" src={yup} alt="" />
+      </div>
+
       <FormDisplay />
     </>
   );

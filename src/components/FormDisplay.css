@@ -1,16 +1,28 @@
 body {
-  background-color: aquamarine !important;
+  background-color: rgb(158, 213, 255) !important;
 }
 .container {
-  margin: 0 20%;
-  /* background-image: url(); */
+  margin: 0 10%;
 }
 .form {
-  margin: 150px 200px;
+  width: 550px;
+
+  margin: 75px auto;
 }
 .account {
   margin: 30px !important;
 }
 .account * {
-  font-size: x-large !important;
+  font-size: large !important;
+}
+@media only screen and (max-width: 900px) {
+  .form {
+    width: 70%;
+    margin: 75px 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 2%;
+  }
 }

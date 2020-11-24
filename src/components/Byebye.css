@@ -2,10 +2,36 @@ h1 {
   text-align: center;
 }
 p {
-  margin: 5px;
-  padding: 5px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px 0;
   text-align: center;
 }
 .info {
-  margin: 0 8px;
+  margin: 0 5px;
+  color: grey;
+}
+.donediv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.donediv * {
+  background-image: linear-gradient(to bottom right, #ef5f34, #ab2d77);
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 100px;
+  font-size: 30px !important;
+}
+.byebye {
+  box-shadow: 0px 0px 50px 30px #ffffff;
+  text-align: center;
+  padding: 40px;
+  margin: 5%;
+  background-color: white;
+}
+.flex {
+  justify-content: center;
+  display: flex;
 }
