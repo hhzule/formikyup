@@ -42,11 +42,11 @@ const FormDisplay = () => {
           <CardContent>
             <FormikStepper
               initialValues={{
-                firstName: "h",
-                lastName: "h",
-                age: "5",
-                email: "d@k.v",
-                password: "d",
+                firstName: "",
+                lastName: "",
+                age: "",
+                email: "",
+                password: "",
                 Subject: [],
               }}
               onSubmit={(values, actions) => {
@@ -61,11 +61,11 @@ const FormDisplay = () => {
                   firstName: yup
                     .string()
                     .required()
-                    .min(1, "minimun 4 characters required"),
+                    .min(4, "minimun 4 characters required"),
                   lastName: yup
                     .string()
                     .required()
-                    .min(1, "minimun 8 characters required"),
+                    .min(8, "minimun 8 characters required"),
                   age: yup.number().required(),
                   // email: yup.string().email().required(),
                   // password: yup.mixed().required(),
@@ -111,7 +111,7 @@ const FormDisplay = () => {
                   password: yup
                     .string()
                     .required()
-                    .min(1, "minimun 8 characters required"),
+                    .min(8, "minimun 8 characters required"),
                 })}
                 label="Account Setup"
               >
