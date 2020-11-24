@@ -145,19 +145,19 @@ const FormDisplay = () => {
               >
                 <ComponentToShowFullName />
                 <br />
-                <label>
+                <label className="checkbox">
                   <Field type="checkbox" name="Subject" value="English" />
-                  English
+                  <p>English</p>
                 </label>
                 <br />
-                <label>
+                <label className="checkbox">
                   <Field type="checkbox" name="Subject" value="Math" />
-                  Math
+                  <p>Math</p>
                 </label>
                 <br />
-                <label>
+                <label className="checkbox">
                   <Field type="checkbox" name="Subject" value="Computer" />
-                  Computer
+                  <p>Computer</p>
                 </label>{" "}
                 <br />
                 <p>Select atleast one</p>
@@ -331,8 +331,10 @@ function ComponentToShowFullName() {
 
   return (
     <>
-      Hello,{" "}
-      {formikContext.values.firstName + " " + formikContext.values.lastName}!
+      <p style={{ color: "grey" }}>
+        <strong>Hello, </strong>
+        {formikContext.values.firstName + " " + formikContext.values.lastName}!
+      </p>
     </>
   );
 }
@@ -347,10 +349,26 @@ function ComponenetToConfirm() {
 
   return (
     <>
-      you entered first name: {formikContext.values.firstName}
-      last name: {formikContext.values.lastName}
-      age: {formikContext.values.age}
-      email: {formikContext.values.email}
+      <div className="confirm">
+        <h3>You Entered The Following</h3>
+        <p>
+          {" "}
+          <strong>First Name:</strong> {formikContext.values.firstName}
+        </p>
+        <p>
+          <strong> Last Name:</strong> {formikContext.values.lastName}
+        </p>
+        <p>
+          {" "}
+          <strong>Age: </strong>
+          {formikContext.values.age}
+        </p>
+        <p>
+          {" "}
+          <strong>Email: </strong>
+          {formikContext.values.email}
+        </p>
+      </div>
     </>
   );
 }
